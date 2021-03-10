@@ -17,7 +17,7 @@ public class TestPerson {
 	public static void main(String[] args) {
 
 		// Inicializacion
-		List<Person> people = new ArrayList();
+		List<Person> people = new ArrayList<>();
 		people.add(new Person("Iveth", LocalDate.of(1992, 1, 12), Sex.FEMALE, "gatito@gmail.com"));
 		people.add(new Person("Axa", LocalDate.of(1991, 10, 13), Sex.MALE, "patito@gmail.com"));
 		people.add(new Person("Dracula", LocalDate.of(1600, 10, 20), Sex.MALE, "dracula@gmail.com"));

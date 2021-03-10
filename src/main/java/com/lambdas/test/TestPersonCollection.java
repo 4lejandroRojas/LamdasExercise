@@ -2,7 +2,6 @@ package com.lambdas.test;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -14,7 +13,7 @@ public class TestPersonCollection {
 
 	public static void main (String []args) {
 		//Inicializacion
-		List<Person> people = new ArrayList();
+		List<Person> people = new ArrayList<>();
 		people.add(new Person("Iveth", LocalDate.of(1992, 1, 12), Sex.FEMALE, "gatito@gmail.com"));
 		people.add(new Person("Axa", LocalDate.of(1991, 10, 13), Sex.MALE, "patito@gmail.com"));
 		people.add(new Person("Dracula", LocalDate.of(1600, 10, 20), Sex.MALE, "dracula@gmail.com"));
@@ -24,9 +23,9 @@ public class TestPersonCollection {
 		people.add(new Person("Lorenz", LocalDate.of(1986, 12, 1), Sex.MALE, "xyz@gmail.com"));
 		
 		//Copia de listados para no alterar el original.
-		List<Person> peopleNames = new ArrayList(people);
-		List<Person> peopleAges = new ArrayList(people);
-		List<Person> peopleAges2 = new ArrayList(people);
+		List<Person> peopleNames = new ArrayList<>(people);
+		List<Person> peopleAges = new ArrayList<>(people);
+		List<Person> peopleAges2 = new ArrayList<>(people);
 		
 		Collections.sort(peopleAges, 
 				(p1, p2) -> (int) p1.getAge() - p2.getAge());
